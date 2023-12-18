@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="gallery.css">
+        <script src="https://kit.fontawesome.com/61e82eaffe.js" crossorigin="anonymous"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+              const menuBtn = document.querySelector('.menu-btn');
+              const navLinks = document.querySelector('.nav-links');
+              menuBtn.addEventListener('click', function() {
+                navLinks.classList.toggle('show');
+              });
+            });
+          </script>
+    </head>
+<body>
+    <header class="header">
+        <h3>Israt Jahan</h3>
+        <nav>
+            <button class="menu-btn">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Projects</a></li>
+                <li><a href="index.html">About me</a></li>
+                <li><a href="index.html">Skills</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="#contact">Contact me</a></li>
+                <li><a href="#bch">More about BCH</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="grid-wrapper">
+            <div class="img-1"><img src="images_2/image-1.jpeg" alt=""></div>
+            <div class="img-2"><img src="images_2/image-2.webp" alt=""></div>
+            <div class="img-3"><img src="images_2/image-4.jpeg" alt=""></div>
+            <div class="img-4"><img src="images_2/image-3.jpeg" alt=""></div>
+            <div class="img-5"><img src="images_2/image-7.jpeg" alt=""></div>
+            <div class="img-6"><img src="images_2/image-5.webp" alt=""></div>
+            <div class="img-7"><img src="images_2/image-6.jpeg" alt=""></div>
+            <div class="img-8"><img src="images_2/image-9.webp" alt=""></div>
+            <div class="img-9"><img src="images_2/image-8.webp" alt=""></div>
+        </div>
+        <p>Images from <a href="">unsplash</a></p>
+    </main>
+    <footer id="contact">
+        <h3>Contact me</h3>
+        <form>
+            <div>
+                <label class="">Your Name</label>
+                <input type="text" placeholder="" style="width: 22rem;">
+            </div>
+            <div>
+                <label>Your Email</label>
+                <input type="email" placeholder="" style="width: 22rem;">
+            </div>
+            <div>
+                <label>Message to me</label>
+                <input type="text" style="width: 22rem; height: 5rem;">
+            </div>
+            <button type="submit" value="submit">SEND MESSAGE</button>
+        </form>
+        <p>Copyright @ My Website 2021</p>
+    </footer>
+</body>
+</html>

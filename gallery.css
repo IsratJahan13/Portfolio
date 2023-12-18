@@ -1,0 +1,158 @@
+:root {
+    --black: black;
+    --white: white;
+    --orange: orange;
+    --grey: #817c7c;
+}
+body, html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header h3 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+}
+nav a {
+    color: var(--black);
+    text-align: center;
+    padding: 17px 16px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+.menu-btn {
+    display: none;
+}
+nav a:hover {
+    background-color: var(--grey);
+    color: var(--black);
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.grid-wrapper > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.grid-wrapper {
+    margin: 2rem 6rem 1rem 6rem;
+    display: grid;
+    grid-gap: 0.6rem;
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+}
+.img-1 {
+    grid-area: 1 / 1 / 5 / 3;
+}
+.img-2 {
+    grid-area: 1 / 3 / 3 / 5;
+}
+.img-3 {
+    grid-area: 1 / 5 / 6 / 7;
+}
+.img-4 {
+    grid-area: 3 / 3 / 5 / 5;
+}
+.img-5 {
+    grid-area: 5 / 1 / 6 / 2;
+}
+.img-6 {
+    grid-area: 6 / 1 / 7 / 2;
+}
+.img-7 {
+    grid-area: 7 / 1 / 8 / 2;
+}
+.img-8 {
+    grid-area: 5 / 2 / 8 / 5;
+}
+.img-9 {
+    grid-area: 6 / 5 / 8 / 7;
+}
+main p {
+    margin: 0 6rem 3rem 6rem;
+}
+p a {
+    text-decoration: none;
+    color: var(--orange);
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--black);
+    color: var(--white);
+    padding: 1.5rem;
+}
+footer h3{
+    font-size: 1.4rem;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form div{
+    display: flex;
+    padding: 1rem;
+}
+form label{
+    width: 10rem;
+}
+button{
+    background-color: var(--orange);
+    color: var(--white);
+    padding: 1rem;
+    margin: 0.8rem;
+    border: none;
+    border-radius: 3px;
+    width: 9rem;
+}
+footer p{
+    font-size: 0.5rem;
+    padding-top: 1rem;
+}
+@media only screen and (max-width: 768px) {
+    .grid-wrapper {
+        margin: 2rem 4rem 1rem 4rem;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .nav-links {
+      display: none;
+      margin-top: 1rem;
+    }
+    .nav-links li {
+        background-color: var(--white);
+        border: 1px solid var(--grey);
+        padding: 1rem;
+    }
+    /* Style for the mobile menu button */
+    .menu-btn {
+      display: block;
+      background-color: var(--white);
+      color: var(--black);
+      border: none;
+      padding: 2px;
+      margin: 2rem 0 0 0;
+      cursor: pointer;
+    }
+    /* Show the mobile menu when the button is clicked */
+    .show {
+      display: block;
+    }
+    .grid-wrapper {
+        margin: 2rem 3rem 1rem 3rem;
+    }
+    .header h3 {
+        padding-left: 2.5rem;
+    }
+    form div{
+        flex-wrap: wrap;
+    }
+}
