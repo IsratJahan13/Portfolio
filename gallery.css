@@ -126,6 +126,7 @@ footer p{
     .nav-links {
       display: none;
       margin-top: 1rem;
+      position: absolute;
     }
     .nav-links li {
         background-color: var(--white);

@@ -27,43 +27,43 @@
         <h1>Welcome To My Portfolio</h1>
     </header>
     <main>
-        <section class="project_Skill_Section">
+        <section class="project_Section" id="projects">
             <h3 class="projectHeading">Projects</h3>
             <div class="project_Div">
                 <div class="card">
-                    <img src="images_1/hourglasse.jpeg" alt="timer">
+                    <a href="images/banner2.jpg" target="_blank"><img src="images/banner2.jpg" alt="timer"></a>
                     <div class="container">
                         <h3>Lorem ipsum dolor sit</h3>
                         <p>HTML, CSS, JavaScript</p>
-                        <a href="">See more</a>
+                        <a href="" target="_blank">See more</a>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="images_1/car.webp" alt="car">
+                    <a href="images/img2.jpg" target="_blank"><img src="images/img2.jpg" alt="car"></a>
                     <div class="container">
                         <h3>Lorem ipsum dolor sit</h3>
                         <p>UX Design Layouts</p>
-                        <a href="">See more</a>
+                        <a href="" target="_blank">See more</a>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="images_1/sky.jpeg" alt="sky">
+                    <a href="images/img3.jpg" target="_blank"><img src="images/img3.jpg" alt="sky"></a>
                     <div class="container">
                         <h3>Lorem ipsum dolor sit</h3>
                         <p>ReactJS, NodeJS</p>
-                        <a href="">See more</a>
+                        <a href="" target="_blank">See more</a>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="aboutMeSection">
+        <section class="aboutMeSection" id="aboutMe">
             <h3 class="projectHeading">About me</h3>
             <div class="aboutmeDiv">
-                <figure><img src="images_1/gray-wolf.jpg"alt=""></figure>
+                <figure><img src="images/about_me.jpg"alt=""></figure>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi nulla at nisi alias dicta dolores doloremque sed? Asperiores commodi dignissimos blanditiis delectus eos repudiandae facilis consequuntur qui magni, et animi illum eum aliquam reiciendis recusandae. Excepturi, est ex earum alias, accusantium repellendus sapiente vel suscipit mollitia distinctio quae neque porro! Tempora dignissimos non dolore ipsa, soluta maxime fugit natus reiciendis quas iure, optio quod illum quidem iusto fugiat odio voluptate laborum porro laboriosam voluptates possimus? Fugit accusamus dolorum nemo repudiandae ad tempore iusto explicabo reprehenderit a quia! Sed assumenda possimus molestias odit reprehenderit, quam accusamus earum maiores nobis, dicta necessitatibus.</p>
             </div>
         </section>
-        <section class="project_Skill_Section">
+        <section class="skill_Section" id="skills">
             <h3 class="projectHeading">Skills</h3>
             <div class="skills">
                 <div class="skillcard">
@@ -77,14 +77,14 @@
                     <div class="progress css"></div>
                 </div>
                 <div class="skillcard">
-                    <i class="fa-sharp fa-solid fa-users"></i>
-                    <p>Teaching</p>
-                    <div class="progress teaching"></div>
+                    <i class="fa-brands fa-js"></i>
+                    <p>JS</p>
+                    <div class="progress js"></div>
                 </div>
                 <div class="skillcard">
-                    <i class="fa-solid fa-award"></i>
-                    <p>Coaching</p>
-                    <div class="progress coaching"></div>
+                    <i class="fa-brands fa-react"></i>
+                    <p>React</p>
+                    <div class="progress react"></div>
                 </div>
             </div>
         </section>
@@ -97,29 +97,22 @@
         <form>
             <div>
                 <label class="">Your Name</label>
-                <input type="text" placeholder="" style="width: 22rem;">
+                <input type="text" placeholder="">
             </div>
             <div>
                 <label>Your Email</label>
-                <input type="email" placeholder="" style="width: 22rem;">
+                <input type="email" placeholder="">
             </div>
             <div>
                 <label>Message to me</label>
-                <input type="text" style="width: 22rem; height: 5rem;">
+                <input type="text" style="height: 4rem;">
             </div>
             <button type="submit" value="submit">SEND MESSAGE</button>
         </form>
         <p>Copyright @ My Website 2021</p>
     </footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-          const menuBtn = document.querySelector('.menu-btn');
-          const navLinks = document.querySelector('.nav-links');
-          menuBtn.addEventListener('click', function() {
-            navLinks.classList.toggle('show');
-          });
-        });
+    <script src="script.js">
     </script>
     <script>
         // Get the button:

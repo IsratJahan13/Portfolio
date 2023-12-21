@@ -10,8 +10,8 @@ body, html {
     font-family: Arial, Helvetica, sans-serif;
 }
 .header {
-    background-image: url("images_1/nature.jpg");
-    height: 60%;
+    background-image: url("images/banner3.jpg");
+    height: 70%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -36,14 +36,20 @@ body, html {
 .menu-btn {
     display: none;
 }
-@keyframes example {
-    from {background-color: transparent;}       /* adding animation */
-    to {background-color: var(--grey);}
+@keyframes size {
+    from {
+      font-size:1rem;
+    }
+    to {
+      font-size:2.5rem;
+    }
   }
 .header h1 {
+    color: var(--black);
     background-color: transparent;
-    animation-name: example;
-    animation-duration: 5s;
+    animation-name: size;
+    animation-duration: 8s;
+    animation-iteration-count: 2;
     text-align: center;
     position: absolute;
     top: 50%;
@@ -83,7 +89,7 @@ body, html {
     font-weight: bold;
     padding-bottom: 1.5rem;
 }
-.project_Skill_Section, .aboutMeSection {
+.project_Section, .aboutMeSection {
     padding: 5rem;
 }
 .project_Div {
@@ -116,7 +122,7 @@ body, html {
 }
 .aboutmeDiv img {
     height: 110px;
-    width: 220px;
+    width: 200px;
     float: right;
     margin-inline-start: 2rem;
     margin-block-end: 1rem;
@@ -126,6 +132,9 @@ body, html {
 }
 .aboutmeDiv p {
     margin-right: 3rem;
+}
+.skill_Section {
+    padding: 5rem 5rem 1rem 5rem;
 }
 .skills{
     display: flex;
@@ -170,13 +179,13 @@ body, html {
     width: 95%;
 }
 .progress.css::after {
+    width: 85%;
+}
+.progress.js::after {
     width: 55%;
 }
-.progress.teaching::after {
-    width: 80%;
-}
-.progress.coaching::after {
-    width: 70%;
+.progress.react::after {
+    width: 15%;
 }
 #myBtn {
     border: none; 
@@ -216,6 +225,9 @@ form div{
 }
 form label{
     width: 10rem;
+}
+form input {
+    width: 22rem;
 }
 button{
     background-color: var(--orange);
@@ -280,10 +292,19 @@ footer p{
     .aboutmeDiv img {
         display: block;
     }
-    .project_Skill_Section {
+    .project_Section {
         padding: 2rem
+    }
+    .aboutMeSection {
+        padding: 1.8rem;
+    }
+    .skill_Section {
+        padding: 2rem;
     }
     form div{
         flex-wrap: wrap;
+    }
+    form input {
+        width: 18rem;
     }
 }
