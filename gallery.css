@@ -148,12 +148,15 @@ footer p{
       display: block;
     }
     .grid-wrapper {
-        margin: 2rem 3rem 1rem 3rem;
+        margin: 1rem;
     }
     .header h3 {
         padding-left: 2.5rem;
     }
     form div{
         flex-wrap: wrap;
+    }
+    form input {
+        width: 18rem;
     }
 }
