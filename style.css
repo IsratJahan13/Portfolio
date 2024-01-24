@@ -56,7 +56,8 @@ body, html {
     gap: 1rem;
 }
 .site-logo img{
-    height: 5rem;
+    margin: 1rem;
+    height: 4rem;
     width: auto;
 }
 .nav-links {
